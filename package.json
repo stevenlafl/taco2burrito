@@ -1,0 +1,42 @@
+{
+  "name": "taco2burrito",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "start": "tsx src/index.ts",
+    "deduce": "tsx scripts/deduce.ts",
+    "experiment": "tsx scripts/experiment.ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "gts": "^5.3.1",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node-fetch": "^2.6.11",
+    "adm-zip": "^0.5.16",
+    "dotenv": "^16.4.5",
+    "fast-xml-parser": "^4.5.0",
+    "fs-extra": "^11.2.0",
+    "node-fetch": "^3.3.2",
+    "tsx": "^4.19.1",
+    "winston": "^3.14.2"
+  }
+}

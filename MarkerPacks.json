@@ -1,0 +1,185 @@
+{
+  "markerpacks": 
+  [
+    {
+      "name": "Lady Elyssa's Guides",
+      "id": "LadyElyssa",
+      "filename": "LadyElyssa.taco",
+      "versionurl": "https://github.com/LadyElyssa/LadyElyssaTacoTrails/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/LadyElyssa/LadyElyssaTacoTrails/releases/latest/download/LadyElyssa.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Lady Elyssa's Achievements",
+      "id": "LadyElyssaAP",
+      "filename": "LadyElyssa.taco",
+      "versionurl": "https://github.com/LadyElyssa/LadyElyssaAchievementGuides/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/LadyElyssa/LadyElyssaAchievementGuides/releases/latest/download/LadyElyssaAP.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Tekkit's All-In-One (Festivals, JPs, Achievements, Gathering, Map Completion)",
+      "id": "Tekkit",
+      "versionurl": "https://www.tekkitsworkshop.net/index.php/download",
+      "versionsearchstring": "ALL-IN-ONE MARKER PACK - ",
+      "versionterminator": "<",
+      "filename": "tw_ALL_IN_ONE.taco",
+      "downloadurl": "https://www.tekkitsworkshop.net/downloads/tw_ALL_IN_ONE.taco",
+      "backupurl": "https://github.com/BoyC/TekkitBackup/raw/main/tw_ALL_IN_ONE.taco",
+      "backupversion": "2022.03.30.",
+      "enabledbydefault": true
+    },
+    {
+      "name": "ReActif English (Festivals, JPs, Achievements, Gathering)",
+      "id": "ReactifEn",
+      "filename": "reactif.en.taco",
+      "versionurl": "https://www.heinze.fr/taco/?lang=en",
+      "versionsearchstring": "r\"><span class=\"green\">",
+      "versionterminator": "<",
+      "downloadurl": "https://www.heinze.fr/taco/download.php?f=3",
+      "enabledbydefault": true
+    },
+    {
+      "name": "ReActif English Guild Missions (Guild Missions)",
+      "id": "ReactifGuild",
+      "filename": "reactif.en.gm.taco",
+      "versionurl": "https://www.heinze.fr/taco/?lang=en",
+      "versionsearchstring": "r\"><span class=\"green\">",
+      "versionterminator": "<",
+      "downloadurl": "https://www.heinze.fr/taco/download.php?f=7",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Teh's Trails (Fast Map Completion)",
+      "id": "Tehs",
+      "filename": "TehsTrails.taco",
+      "versionurl": "https://github.com/xrandox/TehsTrails/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/xrandox/TehsTrails/raw/main/TehsTrails/TehsTrails.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Kresky's GW2 Markers (Hero Points)",
+      "id": "Kreskys",
+      "filename": "Kreskys.taco",
+      "versionurl": "https://github.com/Kresky/gw2-blish-markers/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Kresky/gw2-blish-markers/releases/latest/download/kreskysmarkers.zip",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Movement on the World (Generic: Scenic Routes)",
+      "id": "Mow",
+      "filename": "MoW.taco",
+      "versionurl": "https://github.com/Sutcenes/MovementOnTheWorld_TacoSupport/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Sutcenes/MovementOnTheWorld_TacoSupport/releases/latest/download/MoW.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Nexploration (EoD Map Completion)",
+      "id": "Nexploration",
+      "filename": "Nexploration.taco",
+      "versionurl": "https://github.com/Nexrym/Nexploration/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Nexrym/Nexploration/releases/latest/download/Nexploration.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Metal Marker Myriad",
+      "id": "MMM",
+      "filename": "metal_marker_myriad.taco",
+      "versionurl": "https://github.com/Metallis/Metal-Marker-Myriad/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Metallis/Metal-Marker-Myriad/releases/latest/download/Metal-Marker-Myriad.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "[fast] TacO Markers (Solo Farming)",
+      "id": "fast",
+      "filename": "602fd903dad6efast_TacO_pack_001.taco",
+      "forcedversion" : "002",
+      "downloadurl": "https://fast.farming-community.eu/fast/markers/fast_TacO_pack.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Hero's Marker Pack (Fractals, Raids, Strikes, Dungeons) Performance Warning: Large Icons",
+      "id": "Heros",
+      "filename": "hero.blish.pack.taco",
+      "versionurl": "https://github.com/QuitarHero/Heros-Marker-Pack/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/QuitarHero/Heros-Marker-Pack/releases/latest/download/Hero.Blish.Pack.zip",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Zippy (Ziplines)",
+      "id": "zippy",
+      "filename": "Zippy.taco",
+      "versionurl": "https://github.com/Girbilcannon/zippy/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Girbilcannon/zippy/releases/latest/download/Zippy.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Pewpew's Power Paths",
+      "id": "Pewpew",
+      "filename": "Pewpews_Power_Paths.taco",
+      "versionurl": "https://github.com/Girbilcannon/Pewpews-Power-Paths/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/Girbilcannon/Pewpews-Power-Paths/releases/latest/download/Pewpews_Power_Paths.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Tyria [DRFT]",
+      "id": "DRFT",
+      "filename": "DRFT_Main.taco",
+      "versionurl": "https://github.com/n1nj44r91/Tyria-Drift-DRFT-GW2-TacO-Racetracks/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/n1nj44r91/Tyria-Drift-DRFT-GW2-TacO-Racetracks/releases/latest/download/DRFT_Main.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "Tyria [DRFT] Grand Prix",
+      "id": "DRFT_GP",
+      "filename": "DRFT_GP.taco",
+      "versionurl": "https://github.com/n1nj44r91/Tyria-Drift-DRFT-GW2-TacO-Grand-Prix-Tracks/releases/latest",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/n1nj44r91/Tyria-Drift-DRFT-GW2-TacO-Grand-Prix-Tracks/releases/latest/download/DRFT_GP.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "[MOAR] Meta and HP Trains",
+      "id": "MOAR",
+      "filename": "moar.taco",
+      "versionurl": "https://moar-loot.web.app/releases/",
+      "versionsearchstring": "releases/",
+      "versionterminator": "\"",
+      "downloadurl": "https://moar-loot.web.app/releases/moar.taco",
+      "enabledbydefault": false
+    },
+    {
+      "name": "GW2 Twisted Castle",
+      "id": "TwistedCastle",
+      "filename": "TwistedCastle.taco",
+      "versionurl": "https://github.com/SZG5/gw2-twisted-castle/releases/",
+      "versionsearchstring": "releases/tag/",
+      "versionterminator": "\"",
+      "downloadurl": "https://github.com/SZG5/gw2-twisted-castle/releases/latest/download/TwistedCastle.taco",
+      "enabledbydefault": false
+    }
+  ]
+}

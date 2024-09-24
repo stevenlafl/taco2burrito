@@ -41,7 +41,7 @@ export class GW2Trail {
     }
 
     // Since you want the Build function to be ignored, we omit that part here
-    console.log(`Positions imported: ${this.positions.length}`);
+    //console.log(`Positions imported: ${this.positions.length}`);
 
     return true;
   }

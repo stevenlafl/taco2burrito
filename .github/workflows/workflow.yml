@@ -1,10 +1,12 @@
 name: Build and Upload ZIP Artifacts
 
 on:
-  workflow_dispatch:  # Allows manual triggering of the workflow
   push:
-    tags:             # Automatically triggers if a Git tag is created
-      - '*'           # Match all tags, including '1.0', 'v1.0', '2.0', etc.
+    branches:
+      - '*'  # Runs on all branches
+    tags:
+      - '*'  # Runs on all tags
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   build:
@@ -14,43 +16,53 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install dependencies (pnpm install)
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
         run: |
           mkdir packages
           pnpm install
 
-      - name: Run application (pnpm start)
+      - name: Run application
         run: pnpm start
 
       - name: Upload artifacts
-        if: success()
         uses: actions/upload-artifact@v3
         with:
           name: built-zips
           path: packages/*.zip
 
   release:
-    if: startsWith(github.ref, 'refs/tags/')  # Runs only if triggered by a tag
     needs: build
+    if: startsWith(github.ref, 'refs/tags/')  # Only runs on tags
     runs-on: ubuntu-latest
+    
     steps:
       - name: Download built artifacts
         uses: actions/download-artifact@v3
         with:
           name: built-zips
+          path: packages
 
-      - name: Get the release for the tag
-        id: get_release
-        uses: actions-ecosystem/action-get-release-by-tag@v1
-        with:
-          tag_name: ${{ github.ref_name }}
-
-      - name: Upload built artifacts to release
-        if: steps.get_release.outputs.release_id != ''
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ github.ref_name }}
-          files: packages/*.zip
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        continue-on-error: true  # Fails silently if release already exists without breaking
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for file in packages/*.zip
+          do
+            filename=$(basename "$file")
+            echo "Uploading $filename"
+            gh release upload ${{ github.ref_name }} "$file" --clobber
+          done
